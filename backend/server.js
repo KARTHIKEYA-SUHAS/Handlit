@@ -5,9 +5,11 @@ const chalk = require("chalk").default;
 const boxen = require("boxen").default;
 
 app.listen(PORT, () => {
+  const link = `\u001B]8;;http://localhost:${PORT}/api-docs\u0007Open SwaggerUI\u001B]8;;\u0007`;
+
   const message = `
-🚀 Server running
-🌐 http://localhost:${PORT}/api-docs
+🚀 Hello Captain, Server running successfully
+🌐 ${link}
 `;
 
   console.log(
