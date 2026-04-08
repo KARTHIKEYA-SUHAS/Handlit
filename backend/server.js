@@ -8,7 +8,7 @@ app.listen(PORT, () => {
   const link = `\u001B]8;;http://localhost:${PORT}/api-docs\u0007Open SwaggerUI\u001B]8;;\u0007`;
 
   const message = `
-🚀 Hello Captain, Server running successfully
+🚀 Hello Captain, Server running successfully on port!
 🌐 ${link}
 `;
 
