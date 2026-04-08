@@ -1,6 +1,20 @@
-const app = require('./src/app');
-const { PORT } = require('./src/config');
+const app = require("./src/app");
+const { PORT } = require("./src/config");
+
+const chalk = require("chalk").default;
+const boxen = require("boxen").default;
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port http://localhost:${PORT}/api-docs`);
+  const message = `
+🚀 Server running
+🌐 http://localhost:${PORT}/api-docs
+`;
+
+  console.log(
+    boxen(chalk.greenBright(message), {
+      padding: 1,
+      borderStyle: "round",
+      borderColor: "green",
+    }),
+  );
 });
